@@ -1,0 +1,21 @@
+Description du fonctionnement de l’application
+
+Cette application est un jeu de mémory en ligne.
+
+Au lancement, le joueur entre son nom. L’application vérifie si ce nom existe déjà dans la liste des joueurs enregistrés. Si le nom existe, le joueur est reconnu. Si le nom n’existe pas, il est ajouté comme nouveau joueur.
+
+Le joueur choisit ensuite un niveau de difficulté. Chaque niveau correspond à un nombre de cartes : 4, 8, 12, 16 ou 20 cartes.
+
+Quand la partie commence, l’application sélectionne automatiquement des images dans la bibliothèque préparée par le créateur. Chaque image est dupliquée pour former une paire, puis toutes les cartes sont mélangées.
+
+Le joueur retourne deux cartes à la fois. Si les deux images sont identiques, les cartes restent visibles. Si elles sont différentes, elles se retournent automatiquement après un court délai.
+
+Pendant la partie, l’application compte le nombre de coups et mesure le temps de jeu avec un chronomètre.
+
+Quand toutes les paires sont trouvées, la partie se termine. Le score du joueur est enregistré avec son nom, le niveau joué, le nombre de coups, le temps réalisé et la date de la partie.
+
+Un classement des joueurs est affiché. Les meilleurs scores sont classés par niveau, puis par nombre de coups, puis par temps le plus court.
+
+Le classement est enregistré localement dans le navigateur grâce au stockage local. Il peut être remis à zéro automatiquement au bout de cinq jours. Un bouton administrateur protégé par un code permet aussi de remettre tous les classements à zéro manuellement.
+
+L’application fonctionne en HTML, CSS et JavaScript. Elle est hébergée en ligne avec GitHub Pages et peut être utilisée depuis un ordinateur, une tablette ou un téléphone.
