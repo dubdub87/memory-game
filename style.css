@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #222;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.screen {
+  display: none;
+  width: 100%;
+  max-width: 520px;
+  background: white;
+  padding: 32px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.screen.active {
+  display: block;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+button {
+  border: none;
+  background: #4f46e5;
+  color: white;
+  font-size: 18px;
+  padding: 14px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3730a3;
+}
+.level-choice {
+  margin-bottom: 24px;
+}
+
+.level-choice label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  max-width: 280px;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+}
+
+.secondary-button {
+  margin-left: 10px;
+  background: #6b7280;
+}
+
+.secondary-button:hover {
+  background: #4b5563;
+}
+
+#game-board {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  background: #4f46e5;
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.card.flipped {
+  background: #22c55e;
+}
+
+.card.found {
+  background: #16a34a;
+  cursor: default;
+}
+
+.restart-game-button {
+  background: #f97316;
+}
+
+.restart-game-button:hover {
+  background: #ea580c;
+}
+
+.image-library {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  max-height: 280px;
+  overflow-y: auto;
+  margin: 20px 0 24px;
+  padding: 10px;
+  border: 2px solid #eee;
+  border-radius: 14px;
+}
+
+.image-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #fafafa;
+}
+
+.image-option img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.image-option input {
+  transform: scale(1.2);
+}
+
+.image-option span {
+  font-size: 14px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.name-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.name-form input {
+  width: 100%;
+  max-width: 280px;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+}
+
+.ranking-panel {
+  display: none;
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 14px;
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+}
+
+.ranking-panel table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.ranking-panel th,
+.ranking-panel td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.ranking-panel th {
+  background: #eef2ff;
+}
+
+.admin-reset-button {
+  margin-top: 16px;
+  background: #dc2626;
+}
+
+.admin-reset-button:hover {
+  background: #991b1b;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeu de Mémory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="app">
+    <section id="home-screen" class="screen active">
+      <h1>Jeu de Mémory</h1>
+      <p>Choisis tes images, sélectionne un niveau, puis retrouve toutes les paires.</p>
+      <button id="start-button">Commencer</button>
+    </section>
+    <section id="player-screen" class="screen">
+  <h2>Joueur</h2>
+
+      <p>Entre ton nom pour commencer.</p>
+
+      <div class="name-form">
+        <input type="text" id="player-name-input" placeholder="Ton nom">
+        <button id="validate-name-button">Valider</button>
+        <button id="show-ranking-button" class="secondary-button">Voir le classement</button>
+      </div>
+
+      <div id="general-ranking-panel" class="ranking-panel">
+        <h3>Classement des joueurs</h3>
+        <div id="general-ranking-list"></div>
+      </div>
+
+      <button id="admin-reset-button" class="admin-reset-button">
+      Remise à zéro admin
+      </button>
+      
+    </section>
+    <section id="setup-screen" class="screen">
+
+      <h2>Préparation du jeu</h2>
+
+      <p>Choisis le niveau de difficulté.</p>
+      <p id="player-info"></p>
+      <div class="level-choice">
+        <label for="level-select">Nombre de cartes :</label>
+
+        <select id="level-select">
+          <option value="4">4 cartes - facile</option>
+          <option value="8">8 cartes</option>
+          <option value="12">12 cartes</option>
+          <option value="16">16 cartes</option>
+          <option value="20">20 cartes - difficile</option>
+        </select>
+      </div>
+
+      <button id="play-button">Jouer</button>
+      <button id="back-button" class="secondary-button">Retour</button>
+    </section>
+
+    <section id="game-screen" class="screen">
+      <h2>Jeu</h2>
+
+        <p id="move-counter">
+        Coups : 0
+        </p>
+
+        <p id="timer">
+        Temps : 00:00
+        </p>
+
+      <p id="game-info">
+        Niveau choisi : 4 cartes
+      </p>
+
+      <div id="game-board"></div>
+
+     <button id="new-game-button" class="restart-game-button">
+     Recommencer
+     </button>
+    </section>
+  </main>
+
+    <div id="ranking-panel" class="ranking-panel">
+  <h3>Classement</h3>
+  <div id="ranking-list"></div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
