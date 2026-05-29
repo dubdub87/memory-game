@@ -1,3 +1,9 @@
+/*
+  Jeu de Mémory
+  Copyright © 2026 Dubarre Arnaud. Tous droits réservés.
+  Aucune copie, modification, redistribution ou réutilisation sans autorisation écrite.
+*/
+
 let moves = 0;
 let firstCard = null;
 let secondCard = null;
@@ -528,3 +534,9 @@ adminResetButton.addEventListener("click", () => {
 
 resetRankingAfterFiveDays();
 displayImageLibrary();
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js");
+  });
+}
