@@ -446,6 +446,10 @@ function displayGeneralRanking() {
 function displayImageLibrary() {
   const imageLibraryContainer = document.getElementById("image-library");
 
+  if (!imageLibraryContainer) {
+    return;
+  }
+
   imageLibraryContainer.innerHTML = "";
 
   imageLibrary.forEach((image) => {
